@@ -9,6 +9,7 @@ services:
      - MYSQL_ROOT_PASSWORD=password
    volumes:
      - "./scripts/database.sql:/docker-entrypoint-initdb.d/1.sql"
+# create a folder "scripts" and place the database.sql inside it.
   servletapplication:
    image: servletapplication
    container_name: servletapplication
